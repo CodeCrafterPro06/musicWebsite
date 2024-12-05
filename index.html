@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html-files/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sectionWelcome">
+        <div class="relative w-[100%]" style="height: 100vh; overflow-y: hidden;">
+            <div class="hidden lg:block">
+                <video class="home-bg" autoplay loop muted src="../videos/video.MP4" type="video/mp4"></video>
+            </div>
+            <div class="block lg:hidden">
+                <video height="1000" width="1000" class="home-bg" autoplay loop muted src="../videos/mobile.MP4" type="video/mp4"></video>
+            </div>
+            <div class="home-overlay absolute flex flex-col items-center">
+                <div class="hidden md:block text-[white] text-center md:text-3xl lg:text-5xl font-black mt-24">Welcome To Shree Sharada Sangeeta Vidyalayam</div>
+                <div class="block md:hidden text-[white] text-center text-lg font-black mt-16">Welcome To <br/>Shree Sharada Sangeeta Vidyalayam</div>
+                <hr class="w-[90%] md:w-[80%] border-solid border-1 border-[white] mt-3 md:mt-4"/>
+                <a href="../html-files/homePage.html" class="homeLoginButton flex items-center justify-center w-[35%] md:w-[15%] bg-white border-solid rounded-full text-center p-0.5 md:p-2 mt-3 md:mt-4">
+                    <div class="text-black text-md md:text-lg font-bold pr-2">Visit Us</div>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

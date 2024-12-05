@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="hidden lg:block w-[100%] top-0">
+    <div class="nav-bg p-2 px-3 flex items-center justify-between">
+        <div>
+           <a href="../html-files/homePage.html"><img class="w-44" src="../images/logo.png"/></a>
+        </div>
+        <div class="flex gap-x-6 xl:gap-x-12">
+            <a href="../html-files/musicPage1.html" class="login-nav-ele text-[white] text-xs xl:text-base font-semibold rounded-full">Prarambhik</a> 
+            <a href="../html-files/musicPage2.html" class="login-nav-ele text-[white] text-xs xl:text-base font-semibold rounded-full">Praveshika Pratham</a> 
+            <a href="../html-files/musicPage3.html" class="login-nav-ele text-[white] text-xs xl:text-base font-semibold rounded-full">Praveshika Poorna</a>
+            <a href="../html-files/musicPage4.html" class="login-nav-ele text-[white] text-xs xl:text-base font-semibold rounded-full">Madhyama Pratham</a>
+            <a href="../html-files/musicPage5.html" class="login-nav-ele text-[white] text-xs xl:text-base font-semibold rounded-full">Madhyama Poorna</a>
+        </div>
+    </div>
+</nav>
+<nav class="block lg:hidden w-[100%] top-0 fixed z-40">
+    <div class="nav-bg flex items-center justify-between px-4 py-1">
+      <a href="../html-files/homePage.html"><img class="w-44" src="../images/logo.png"/></a>
+      <ul id="sidemenu" class="bg-[#a000c8] w-[40%] h-[100vh] p-3 fixed top-0 right-[-100%]" style="transition: right 0.7s ease;">
+        <i class="fas fa-times text-3xl text-white" onclick="closemenu()"></i>
+        <li class="text-white text-base font-semibold mt-3"><a href="../html-files/musicPage1.html">Prarambhik</a></li>
+        <li class="text-white text-base font-semibold mt-3"><a href="../html-files/musicPage2.html">Praveshika Pratham</a></li>
+        <li class="text-white text-base font-semibold mt-3"><a href="../html-files/musicPage3.html">Praveshika Poorna</a></li>
+        <li class="text-white text-base font-semibold mt-3"><a href="../html-files/musicPage4.html">Madhyama Pratham</a></li>
+        <li class="text-white text-base font-semibold mt-3"><a href="../html-files/musicPage5.html">Madhyama Poorna</a></li>
+      </ul>
+      <i class="fas fa-bars text-2xl" onclick="openmenu()"></i>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    var sidemenu = document.getElementById("sidemenu");
+  
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+  
+    function closemenu() {
+        sidemenu.style.right = "-100%";
+    }
+  </script>
+   
+</body>
+</html>

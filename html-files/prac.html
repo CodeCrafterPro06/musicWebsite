@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html-files/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ------------------------------------Welcome----------------------------->
+    <!-- <div class="homeSection">
+        <div id="sectionWelcome" class="hide show">
+            <div class="relative w-[100%] show" style="height: 100vh;">
+                    <div>
+                        <video class="home-bg" autoplay loop muted src="video.MP4">
+                        </video>
+                    </div>
+                    <div class="home-overlay absolute flex flex-col items-center">
+                        <div class="text-[white] text-center text-5xl font-black mt-24">Welcome To Shree Sharada Sangeeta Vidyalayam</div>
+                        <hr class="w-[80%] border-solid border-1 border-[white] mt-4"/>
+                        <button onclick="display('sectionHome')" class="homeLoginButton flex items-center justify-center w-[15%] bg-white border-solid rounded-full text-center p-2 mt-4">
+                            <div class="text-black text-lg font-bold pr-2">Visit Us</div>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- --------------------------------login-------------------------------- -->
+    <!-- <div id="sectionLogin" class="hide" style="overflow-y: hidden;">
+        <div class="login-bg flex flex-col items-center justify-center">
+            <div class="bg-transparent p-10 w-[30%] login-sub-con rounded-lg">
+                <form>
+                    <div class="text-white text-5xl font-extrabold text-center">Login</div>
+                    <div class="mt-12 flex items-center">
+                        <input type="text" name="userName" placeholder = "Username" required class="w-[100%] border-solid border-[1.5px] border-[white] rounded-full p-3 bg-transparent input shadow-2xl"/>
+                        <i class="fa-solid fa-user absolute min-w-20 p-3 right-2" style="color:white"></i>
+                    </div>
+                    <div class="mt-8 flex items-center">
+                        <input type="password" name="password" placeholder = "Password" required class="w-[100%] border-solid border-[1.5px] border-[white] rounded-full p-3 bg-transparent input shadow-2xl"/>
+                        <i class="fa-solid fa-lock absolute min-w-20 p-3 right-2" style="color:white"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <input required type="checkbox" for="check"/>
+                        <label class="text-white text-sm font-medium" id="check">Remember me</label>
+                    </div>
+                    <button type="submit" class="w-[100%] bg-white border-solid rounded-full text-center p-3 mt-5">
+                        <div class="text-black text-lg font-bold">Login</div>
+                    </button>
+                    <div class="text-white text-medium font-bold text-center mt-8">Welcome To <br/> Shree Sharada Sangeeta Vidyalayam!!</div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------------------------navbar------------------------------------------->
+    <!-- <nav id="sectionNav" class="w-[100%]">
+        <div class="nav-bg p-2 pl-3 pr-3 flex items-center justify-between">
+            <div>
+                <img class="w-44" src="logo.png"/>
+            </div>
+            <div class="flex lg:gap-x-12">
+                <div onclick="display('sectionHome')" class="nav-ele active text-[white] text-md font-semibold rounded-full">Home</div>
+                <div class="nav-ele text-[white] text-md font-semibold rounded-full">About Us</div>
+                <div class="dropdown z-50">
+                    <button class="dropdown-btn nav-ele" aria-haspopup="menu">
+                      <span class="font-semibold">Music Levels</span>
+                      <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-content" role="menu">
+                      <li onclick="display('sectionPrarambhik')" style="--delay: 1;"><a  href="#">Prarambhik</a></li>
+                      <li style="--delay: 2;"><a href="#">Praveshika pratham</a></li>
+                      <li style="--delay: 3;"><a href="#">Praveshika poorna</a></li>
+                      <li style="--delay: 4;"><a href="#">Madhyama pratham</a></li>
+                      <li style="--delay: 5;"><a href="#">Madhyama poorna</a></li>
+                    </ul>
+                  </div>
+                <div onclick="display('sectionContact')" class="nav-ele text-[white] text-md font-semibold rounded-full">Contact Us</div>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!-- --------------------------------Home------------------------------------------- -->
+    <!-- <div id="sectionHome" class="hide">
+        <div class="lg:px-20 xl:px-28 lg:pt-28 xl:pt-20 lg:pb-16 xl:pb-24">
+            <div class="flex justify-between bg-[#a000c8]" style="box-shadow: 10px 15px 15px black;">
+                <div class="lg:m-6 xl:m-10">
+                    <div class="text-black font-[copperplategothicbold] lg:text-6xl xl:text-8xl font-black">Your Home for <br/>Music Education</div>
+                    <div class="text-white lg:text-lg xl:text-xl mt-5 lg:max-w-xl xl:max-w-3xl">Discover the joy of music with expertly crafted notes from a seasoned instructor. Access a vast library of sheet music and tutorials, designed to elevate your playing. Start your musical journey and master your craft today.</div>
+                    <div onclick="display('sectionContact')"  class="home-login cursor-pointer text-black lg:text-[13px] xl:text-xl mt-5 lg:max-w-xl xl:max-w-4xl underline underline-offset-5"><a>Log in to gain access to the notes. For login assistance, please contact us.</a></div>
+                    <button onclick="display('sectionLogin')" class="homeLoginButton bg-white flex items-center justify-center w-[30%] border-solid border-2 border-black rounded-full text-center lg:p-1 xl:p-2 mt-8">
+                        <div class="text-black text-lg font-bold pr-2">Login</div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+                <div">
+                    <img class="w-auto lg:h-[450px] xl:h-[520px]" src="home.jpeg"/>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div> -->
+    <!----------------------------------Music Levels-------------------------------------->
+    <!-- ------------------------------------Prarambik---------------------------- -->
+    <!-- <div id="sectionPrarambhik" class="hide">
+        <div class="main-carousel overflow-hidden mt-12 lg:mt-32">
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c2.jpg"/>
+                <div class="px-4 py-4">
+                <div class="text-white text-md lg:text-xl font-bold text-center">RAAG BHUPALI</div>
+                <div class="text-white text-[13px] lg:text-base pt-2">Raag Bhupali soft melody raag with the dominant Gandhar. Bhoop means King. Bhoopali is a majestic raag from the kalyan family.This raag is one of the beginner raags taught to students due to its simplicity.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c1.jpg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">RAGA BAGESHRI</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Raga Bageshri has a huge depth of expression allowing a never ending sea of exploration. A late night raag of the second prahar 9pm-12am, which is meant to depict the emotion of a woman waiting for reunion with her lover.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c3.jpg">
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">KAFI RAGA</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Kafi raga is a melodic pathway so sweet, emotional and sophisticated, it is virtually an inexhaustible source of mental and spiritual nourishment. Kafi is a sampoorna raga, with komal Gandhar and Nishad.This is also referred to as the Bhairavi of night.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c6.jpeg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">RAGA DURGA</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Raga Durga is a Hindustani raaga associated with the Hindu goddess Durga. It has qualities of brightness, innocence and purity.The time traditionally prescribed for this Raga is late evening to midnight. Raga Durga can help to release stress.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c5.jpg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">RAAG BHIMPALASI</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Raag Bhimpalasi belongs to the Kafi Thaat. It is a Poorvang Pradhan Raag, which means it is a primary raga of the Poorvang tradition. It is a very sweet and hauntingly pleasant melody that is often performed during the early afternoon.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c7.jpg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">RAAG KHAMAJ</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Raag Khamaj is a popular raga that is known for its light and enthralling nature. It is a Shadava-Sampurna raga and is sung in the 2nd division of the night from 9 pm – Midnight. Many Ghazals and Thumris are based out of Raag Khamaj.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c4.jpg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">DESH RAAG</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Desh raag is a popular Hindustani classical music raga that belongs to the Khamaj thaat. It is an Audava-Sampurna raga and is known for its sweet and melodic nature, making it a favorite among musicians and music enthusiasts.</div>
+                </div>
+            </div>
+            <div class="bg-[#a000c8] img-w rounded-[15px] mr-4 lg:mr-10">
+                <img  class="w-[100%] rounded-t-[15px]" src="c8.jpg"/>
+                <div class="px-4 py-4">
+                    <div class="text-white text-md lg:text-xl font-bold text-center">RAAG YAMAN</div>
+                    <div class="text-white text-[13px] lg:text-base pt-2">Raag Yaman is a Janak Raag from the Kalyan family of raags. Some texts use Raag Yaman and Raag Kalyan interchangeably. There is also a version which uses both shuddh and teevra Ma. It is called Yaman-Kalyan or Jaimini-Kalyan.</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ------------------------------ContactUs------------------------------------------- -->
+    <!-- <div id="sectionContact" class="hide z-10">
+        <div class="bg-[white] lg:mt-12 p-4 md:p-8 lg:p-12">
+            <div class="text-[black] text-center text-xl lg:text-3xl lg:text-4xl font-extrabold pt-5" style="filter: drop-shadow(0px 2px 2px #000000);">
+                <div>LET'S MAKE SOMETHING AWESOME TOGETHER...!!</div>
+            </div>
+            <div class="box-shadow md:flex md:gap-x-3 lg:gap-x-6 mt-10">
+                <div class="rounded-2xl md:rounded-l-[50px] md:rounded-r-none bg-[#e8bcf0] p-4 md:p-8 lg:p-10 lg:w-full">
+                    <form>
+                        <div class="text-xl font-semibold mb-4 md:mb-6">Send a Message</div>
+                        <div class="md:flex items-center justify-between gap-x-6">
+                            <div class="flex flex-col gap-y-1 w-full mb-3 md:mb-0">
+                                <label class="text-[#7600bc] text-md font-semibold" for="firstName">First Name</label>
+                                <input required class="h-10 rounded-lg p-3" type="text" name="firstName" id="firstName" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                            </div>
+                            <div class="flex flex-col gap-y-1 w-full">
+                                <label class="text-[#7600bc] text-md font-semibold" for="lastName">Last Name</label>
+                                <input class="h-10 rounded-lg  p-3" type="text" name="lastName" id="lastName" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                            </div>
+                        </div>
+                        <div class="md:flex items-center justify-between gap-x-6 mt-3">
+                            <div class="flex flex-col gap-y-1 w-full mb-3 md:mb-0">
+                                <label class="text-[#7600bc] text-md font-semibold" for="email">Email</label>
+                                <input class="h-10 rounded-lg p-3" type="email" required name="email" id="email" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                            </div>
+                            <div class="flex flex-col gap-y-1 w-full">
+                                <label class="text-[#7600bc] text-md font-semibold" for="number">Mobile</label>
+                                <input class="h-10 rounded-lg p-3" type="tel" required required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="number" id="number" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-1 mt-3">
+                            <label class="text-[#7600bc] text-md font-semibold" for="message">Message</label>
+                            <textarea class=" rounded-lg w-[100%] h-44 rounded-lg p-3" rows="10" name="message" id="message" style="filter: drop-shadow(0px 3px 2px #000000);" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn text-white font-semibold h-10 px-8 py-2 bg-[#a72fed] mt-6">Send</button>
+                    </form>
+                    <span id="msg" class="text-[#7600bc] text-md font-semibold mt-2"></span>
+                </div>
+                <div class="flex flex-col gap-y-3 mt-3 md:mt-0 lg:gap-y-6 z-10">
+                    <div class="rounded-2xl md:rounded-none bg-[#7500bc] p-4 lg:p-7 contact-width">
+                        <div class="text-white text-xl md:text-2xl font-bold">Contact Info</div>
+                        <div class="flex items-center gap-x-4 mt-6">
+                            <i class="fa-solid fa-location-dot" style="color: white;font-size:20px;"></i>
+                            <div class="text-white text-sm md:text-md font-semibold max-w-max">4-8-84/1, Manjeera Nagar, Sangareddy</div>
+                        </div>
+                        <div class="flex items-center gap-x-4 mt-3">
+                            <i class="fa-solid fa-envelope" style="color: white;font-size:20px;"></i>
+                            <div class="text-white text-sm md:text-md font-semibold max-w-max">shwethasharma125@gmail.com</div>
+                        </div>
+                        <div class="flex items-center gap-x-4 mt-3">
+                            <i class="fa-solid fa-phone" style="color: white;font-size:20px;"></i>
+                            <div class="text-white text-sm md:text-md font-semibold max-w-max">+91 9440405897</div>
+                        </div>
+                        <div class="flex gap-x-4 mt-6">
+                            <div class=""><i class="fa-brands fa-instagram" style="color: white;font-size:30px;"></i></div>
+                            <div><i class="fa-brands fa-facebook" style="color: white;font-size:30px;"></i></div>
+                            <div><i class="fa-brands fa-youtube" style="color: white;font-size:30px;"></i></div>
+                            <div><i class="fa-brands fa-twitter" style="color: white;font-size:30px;"></i></div>
+                        </div>
+                    </div>
+                    <div class="bg-white w-full h-60 md:h-full">
+                        <iframe class="w-[100%] h-[100%]" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3802.913217241331!2d78.07986827516997!3d17.606855383318276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDM2JzI0LjciTiA3OMKwMDQnNTYuOCJF!5e0!3m2!1sen!2sin!4v1717323152346!5m2!1sen!2sin" width="60" height="45" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <nav class="block lg:hidden w-[100%] top-0 fixed z-40">
+        <div class="nav-bg flex items-center justify-between px-4 py-1">
+          <a href="../html-files/homePage.html"><img class="w-44" src="../images/logo.png"/></a>
+          <ul id="sidemenu" class="bg-[#a000c8] w-[40%] h-[100vh] p-3 fixed top-0 right-[-100%]" style="transition: right 0.7s ease;">
+            <i class="fas fa-times text-3xl text-white" onclick="closemenu()"></i>
+            <li class="text-white text-base font-semibold mt-3"><a href="#header">Home</a></li>
+            <li class="text-white text-base font-semibold mt-3"><a href="#about">About Us</a></li>
+            <li class="text-white text-base font-semibold mt-3"><a href="#services">Contact Us</a></li>
+            <li class="text-white text-base font-semibold mt-3"><a href="#portfolio">Login</a></li>
+          </ul>
+          <i class="fas fa-bars text-2xl" onclick="openmenu()"></i>
+        </div>
+      </nav>
+      <script type="text/javascript">
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemenu.style.right = "-100%";
+        }
+    </script>
+    <!-- --------------------------------js---------------------------------- -->
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        function display(tabname) {
+            var sections = document.querySelectorAll('.hide, .show');
+            sections.forEach(function(section) {
+                section.classList.remove('show');
+                section.classList.add('hide');
+            });
+            var element = document.getElementById(tabname);
+            element.classList.remove('hide');
+            element.classList.add('show');
+
+            var carousel = element.querySelector('.main-carousel, .another-carousel');
+            if (carousel) {
+                var flkty = new Flickity(carousel, {
+                    cellAlign: 'left',
+                    wrapAround: true,
+                    freeScroll: true,
+                    contain: true
+                });
+                flkty.resize();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var carousels = document.querySelectorAll('.main-carousel, .another-carousel');
+            carousels.forEach(function(carousel) {
+                new Flickity(carousel, {
+                    cellAlign: 'left',
+                    wrapAround: true,
+                    freeScroll: true,
+                    contain: true
+                });
+            });
+        });
+    </script>
+     -->
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            cellAlign: 'left',
+            wrapAround:true,
+            freeScroll: true,
+            contain: true
+            });
+    </script>
+    <script type="text/javascript">
+        var tabcontents = document.getElementsByClassName("hide");
+        function display(tabname){
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("show");
+            }
+            document.getElementById(tabname).classList.add("show");
+        }
+    </script> -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-ele,.home-login');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navItems.forEach(nav => nav.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+});
+</script>
+</body>
+</html>

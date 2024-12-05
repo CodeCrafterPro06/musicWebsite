@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sectionLogin" style="overflow-y: hidden;">
+        <div class="login-bg flex flex-col items-center justify-center">
+            <div class="bg-transparent p-5 md:p-8 lg:p-10 w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%] login-sub-con rounded-lg">
+                <form id="formEle">
+                    <div class="text-white text-4xl lg:text-5xl font-extrabold text-center">Login</div>
+                    <div class="mt-8 lg:mt-12 flex items-center">
+                        <input id="userName" type="text" name="userName" placeholder = "Username" required class="w-[100%] border-solid border-[1.5px] border-[white] rounded-full px-3 py-2 lg:p-3 bg-transparent input shadow-2xl"/>
+                        <i class="fa-solid fa-user absolute min-w-14 md:min-w-[60px] lg:min-w-20 p-2 lg:p-3 right-1 md:right-2" style="color:white"></i>
+                    </div>
+                    <div class="mt-7 lg:mt-8 flex items-center">
+                        <input id="password" type="password" name="password" placeholder = "Password" required class="w-[100%] border-solid border-[1.5px] border-[white] rounded-full px-3 py-2 lg:p-3 bg-transparent input shadow-2xl"/>
+                        <i id="togglePassword" class="fa-solid fa-eye-slash absolute min-w-14 md:min-w-[60px] lg:min-w-20 p-2 lg:p-3 right-1 md:right-2" style="color:white"></i>
+                    </div>
+                    <div class="flex items-center pl-1 lg:pl-0 gap-x-1 mt-4">
+                        <input required type="checkbox" for="check"/>
+                        <label class="text-white text-sm font-medium" id="check">Remember me</label>
+                    </div>
+                   <button id="loginBtn" type="submit" class="cursor-pointer w-[100%] bg-white border-solid rounded-full text-center p-2 lg:p-3 mt-4 lg:mt-5">
+                        <div class="text-black text-md lg:text-lg font-bold">Login</div>
+                    </button>
+                    <div class="hidden md:block text-white text-medium font-bold text-center mt-8">Welcome To <br/> Shree Sharada Sangeeta Vidyalayam!!</div>
+                    <div class="block md:hidden text-white text-sm font-bold text-center mt-6">Welcome To Shree Sharada Sangeeta Vidyalayam!!</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formEle = document.getElementById('formEle');
+            const userName = document.getElementById('userName');
+            const password = document.getElementById('password');
+            const loginBtn = document.getElementById('loginBtn');
+
+            formEle.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                const expectedUsername = 'sharada_12';
+                const expectedPassword = 'passion$11';
+
+                if (userName.value === expectedUsername && password.value === expectedPassword) {
+                    alert('Login successful! Redirecting...');
+                    window.location.href = '../html-files/musicPage1.html';
+                } else {
+                    alert('Invalid username or password. Please try again.');
+                    userName.value = '';
+                    password.value = '';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+          $("#sectionNav").load("nav.html"); 
+        });
+    </script> 
+    <script> 
+        $(function(){
+          $("#sectionFooter").load("footer.html"); 
+        });
+    </script> 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="sectionNav"></div>
+    <div id="homePage">
+        <div class="hidden md:block px-6 py-16 md:mt-8 lg:mt-10 lg:px-20 xl:px-28 lg:pt-28 xl:pt-20 lg:pb-16 xl:pb-18">
+            <div class="flex justify-between bg-[#a000c8]" style="box-shadow: 10px 15px 15px black;">
+                <div class="p-6 lg:p-0 lg:m-6 xl:m-10">
+                    <div class="text-black font-[copperplategothicbold] text-4xl lg:text-6xl xl:text-8xl font-black">Your Home for <br/>Music Education</div>
+                    <div class="text-white lg:text-lg xl:text-xl mt-3 lg:mt-5 lg:max-w-xl xl:max-w-3xl">Discover the joy of music with expertly crafted notes from a seasoned instructor. Access a vast library of sheet music and tutorials, designed to elevate your playing. Start your musical journey and master your craft today.</div>
+                    <div class="home-login cursor-pointer text-black lg:text-[13px] xl:text-xl mt-3 lg:mt-5 lg:max-w-xl xl:max-w-4xl underline underline-offset-5"><a href="../html-files/contact.html">Log in to gain access to the notes. For login assistance, please contact us.</a></div>
+                    <a href="../html-files/loginPage.html" class="homeLoginButton bg-white flex items-center justify-center w-[40%] lg:w-[30%] border-solid border-2 border-black rounded-full text-center p-0.5 lg:p-1 xl:p-2 mt-4 lg:mt-8">
+                        <div class="text-black text-md lg:text-lg font-bold pr-2">Login</div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-[700px] lg:w-auto h-[350px] lg:h-[450px] xl:h-[520px]" src="../images/home.jpeg"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block md:hidden px-6 py-16 mt-8">
+            <div style="box-shadow: 10px 15px 15px black;">
+                <div>
+                    <img class="w-[100%]" src="../images/home.jpeg"/>
+                </div>
+                <div class="bg-[#a000c8]">
+                    <div class="p-6">
+                        <div class="text-black font-[copperplategothicbold] text-3xl font-black">Your Home for <br/>Music Education</div>
+                        <div class="text-white mt-3">Discover the joy of music with expertly crafted notes from a seasoned instructor. Access a vast library of sheet music and tutorials, designed to elevate your playing. Start your musical journey and master your craft today.</div>
+                        <div class="home-login cursor-pointer text-black mt-3 underline underline-offset-5"><a href="../html-files/contact.html">Log in to gain access to the notes. For login assistance, please contact us.</a></div>
+                        <a href="../html-files/loginPage.html" class="homeLoginButton bg-white flex items-center justify-center w-[50%] border-solid border-2 border-black rounded-full text-center p-0.5 mt-4">
+                            <div class="text-black text-sm font-bold pr-2">Login</div>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFooter"></div>
+</body>
+</html>
