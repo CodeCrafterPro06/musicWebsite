@@ -8,4 +8,9 @@ A professional, interactive, and responsive platform showcasing the beauty of In
 - **🎡 Responsive Design:** Optimized for various devices with a dynamic carousel for large screens.
 - **🔊 Multi-Format Audio Support:** Ensures compatibility across browsers and devices.
 
+## 🛠 Technologies Used
+- HTML, CSS, JavaScript
+- Tailwind CSS
+- Google Apps Script (for contact form integration)
+- Deployed on Vercel
 
