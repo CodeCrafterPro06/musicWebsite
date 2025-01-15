@@ -39,7 +39,7 @@
                         <div class="md:flex items-center justify-between gap-x-6">
                             <div class="flex flex-col gap-y-1 w-full mb-3 md:mb-0">
                                 <label class="text-[#7600bc] text-md font-semibold" for="firstName">First Name</label>
-                                <input required class="h-10 rounded-lg p-3" type="text" name="firstName" id="firstName" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                                <input required class="h-10 rounded-lg p-3" type="text" name="Name" id="firstName" style="filter: drop-shadow(0px 3px 2px #000000);"/>
                             </div>
                             <div class="flex flex-col gap-y-1 w-full">
                                 <label class="text-[#7600bc] text-md font-semibold" for="lastName">Last Name</label>
@@ -49,7 +49,7 @@
                         <div class="md:flex items-center justify-between gap-x-6 mt-3">
                             <div class="flex flex-col gap-y-1 w-full mb-3 md:mb-0">
                                 <label class="text-[#7600bc] text-md font-semibold" for="email">Email</label>
-                                <input class="h-10 rounded-lg p-3" type="email" required name="email" id="email" style="filter: drop-shadow(0px 3px 2px #000000);"/>
+                                <input class="h-10 rounded-lg p-3" type="email" required name="Email" id="email" style="filter: drop-shadow(0px 3px 2px #000000);"/>
                             </div>
                             <div class="flex flex-col gap-y-1 w-full">
                                 <label class="text-[#7600bc] text-md font-semibold" for="number">Mobile</label>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="flex flex-col gap-y-1 mt-3">
                             <label class="text-[#7600bc] text-md font-semibold" for="message">Message</label>
-                            <textarea class="rounded-lg w-[100%] h-44 rounded-lg p-3" rows="10" name="message" id="message" style="filter: drop-shadow(0px 3px 2px #000000);" placeholder="Write your message here..."></textarea>
+                            <textarea class="rounded-lg w-[100%] h-44 rounded-lg p-3" rows="10" name="Message" id="message" style="filter: drop-shadow(0px 3px 2px #000000);" placeholder="Write your message here..."></textarea>
                         </div>
                         <button type="submit" class="contact-btn text-white font-semibold h-10 px-8 py-2 bg-[#a72fed] mt-6">Send</button>
                     </form>
@@ -95,7 +95,7 @@
     </div>
     <div id="sectionFooter"></div>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxr2gadNikeuBAy9t5Gx6TVHQL2JQUGsxvtaEendJ9C-5GStpArGHxHmzKQS6QJ2WYFtQ/exec' 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6T5xlMsuHjQ-udkjOmvo48FMDFOZHwil1Dx-grARmupM_QDublv-QoZeDUjtMb6OnDg/exec' 
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
         const spinnerEl = document.getElementById("spinner");
